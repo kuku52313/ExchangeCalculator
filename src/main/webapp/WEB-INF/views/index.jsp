@@ -16,7 +16,7 @@
         .formText {
             font-size: 17px;
             box-sizing: border-box;
-            width: 65%;
+            width: 60%;
             height: 34px;
             color: #333333;
             text-align: left;
@@ -33,7 +33,7 @@
         .formCurrency {
             font-size: 17px;
             box-sizing: border-box;
-            width: 30%;
+            width: 35%;
             height: 34px;
             color: #333333;
             text-align: left;
@@ -72,6 +72,7 @@
 <%--    rest api는 https://earthquake.kr:23490/query/ 를 이용하였습니다--%>
 <div>
     <h3 STYLE="text-align: center">현재환율 계산기</h3>
+<%-- min값으로 음수값은 입력을 방지하였습니다   --%>
     <input type="number" class="formText" id="inputMoney" min="0">
     <select id="inCurrency"  class="formCurrency">
         <option value="">화폐 선택</option>
